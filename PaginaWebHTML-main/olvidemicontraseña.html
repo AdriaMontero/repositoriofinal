@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Perdedor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white; /* Cambié el color del texto a blanco */
+            font-weight: 900;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-image: url('./Gif/laughing-cat.gif');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        body::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.352); /* Capa oscura con opacidad */
+            z-index: -1; /* Asegura que la capa oscura esté detrás del contenido */
+        }
+
+        .button-container {
+            background-color: rgba(0, 0, 0, 0.8); 
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        button {
+            background-color: #d32f2f; 
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease; 
+            width: 80%;
+        }
+
+        button:hover {
+            background-color: #b71c1c; 
+            transform: scale(1.05); 
+        }
+
+        button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button onclick="window.location.href='index.html'">Perdedor</button>
+    </div>
+</body>
+</html>
