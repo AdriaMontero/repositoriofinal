@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Adivina la Palabra</title>
+  <link rel="stylesheet" href="./css/proyecto2.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>¡Adivina la palabra!</h1>
+    <p>Estoy pensando en una palabra que es un animal. Tienes que adivinarla.</p>
+    <input type="text" id="guess" placeholder="Escribe tu adivinanza" maxlength="10">
+    <button onclick="checkGuess()">Adivinar</button>
+    
+    <p id="message"></p>
+    <p id="attempts">Intentos restantes: <span>5</span></p>
+    <p><strong>Pista:</strong> Es el rey de la selva.</p>
+  </div>
+
+  <!-- Botón para volver al inicio -->
+  <button id="backToTop" onclick="goToHome()">Volver al inicio</button>
+
+  <script src="./js/proyecto2.js"></script>
+</body>
+</html>
